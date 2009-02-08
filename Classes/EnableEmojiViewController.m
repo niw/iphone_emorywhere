@@ -16,7 +16,7 @@ static NSString *preferencesPath = @"/private/var/mobile/Library/Preferences/com
 - (BOOL)emojiEverywhere:(BOOL)state {
 	NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithContentsOfFile:preferencesPath];
 	[dic setObject:[NSNumber numberWithBool:state] forKey:@"KeyboardEmojiEverywhere"];
-	return [dic writeToFile:path atomically:NO];
+	return [dic writeToFile:preferencesPath atomically:NO];
 }
 
 #pragma mark -

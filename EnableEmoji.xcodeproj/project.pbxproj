@@ -14,6 +14,9 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* EnableEmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* EnableEmojiViewController.m */; };
+		545967C00F3F4B7500F3DCF3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 545967BF0F3F4B7500F3DCF3 /* Icon.png */; };
+		545967D10F3F4E0E00F3DCF3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 545967D00F3F4E0E00F3DCF3 /* Default.png */; };
+		545967F10F3F4F5600F3DCF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 545967F00F3F4F5600F3DCF3 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		28D7ACF70DDB3853001CB0EB /* EnableEmojiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnableEmojiViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* EnableEmoji_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnableEmoji_Prefix.pch; sourceTree = "<group>"; };
+		545967BF0F3F4B7500F3DCF3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		545967D00F3F4E0E00F3DCF3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		545967EE0F3F4F4100F3DCF3 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		545967F20F3F4F5C00F3DCF3 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +95,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				545967D00F3F4E0E00F3DCF3 /* Default.png */,
+				545967BF0F3F4B7500F3DCF3 /* Icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				545967F00F3F4F5600F3DCF3 /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -147,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				545967C00F3F4B7500F3DCF3 /* Icon.png in Resources */,
+				545967D10F3F4E0E00F3DCF3 /* Default.png in Resources */,
+				545967F10F3F4F5600F3DCF3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		545967F00F3F4F5600F3DCF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545967EE0F3F4F4100F3DCF3 /* English */,
+				545967F20F3F4F5C00F3DCF3 /* Japanese */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

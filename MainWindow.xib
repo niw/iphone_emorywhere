@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="15"/>
+			<integer value="10"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -38,7 +38,21 @@
 					<int key="NSvFlags">274</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUISwitch" id="815756559">
+						<object class="IBUIImageView" id="30899558">
+							<reference key="NSNextResponder" ref="495365080"/>
+							<int key="NSvFlags">293</int>
+							<string key="NSFrame">{{0, -20}, {320, 480}}</string>
+							<reference key="NSSuperview" ref="495365080"/>
+							<bool key="IBUIOpaque">NO</bool>
+							<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+							<int key="IBUIContentMode">4</int>
+							<bool key="IBUIUserInteractionEnabled">NO</bool>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">Default.png</string>
+							</object>
+						</object>
+						<object class="IBUISwitch" id="396661216">
 							<reference key="NSNextResponder" ref="495365080"/>
 							<int key="NSvFlags">301</int>
 							<string key="NSFrame">{{113, 217}, {94, 27}}</string>
@@ -55,9 +69,6 @@
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
 						<bytes key="NSWhite">MQA</bytes>
-						<object class="NSColorSpace" key="NSCustomColorSpace">
-							<int key="NSID">2</int>
-						</object>
 					</object>
 					<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				</object>
@@ -107,14 +118,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">switchEmoji</string>
 						<reference key="source" ref="943309135"/>
-						<reference key="destination" ref="815756559"/>
+						<reference key="destination" ref="396661216"/>
 					</object>
 					<int key="connectionID">19</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">swichChanged:</string>
-						<reference key="source" ref="815756559"/>
+						<reference key="source" ref="396661216"/>
 						<reference key="destination" ref="943309135"/>
 						<int key="IBEventType">13</int>
 					</object>
@@ -168,13 +179,19 @@
 						<reference key="object" ref="495365080"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="815756559"/>
+							<reference ref="396661216"/>
+							<reference ref="30899558"/>
 						</object>
 						<reference key="parent" ref="943309135"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
-						<reference key="object" ref="815756559"/>
+						<reference key="object" ref="396661216"/>
+						<reference key="parent" ref="495365080"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">22</int>
+						<reference key="object" ref="30899558"/>
 						<reference key="parent" ref="495365080"/>
 					</object>
 				</object>
@@ -192,6 +209,7 @@
 					<string>12.IBPluginDependency</string>
 					<string>15.IBPluginDependency</string>
 					<string>17.IBPluginDependency</string>
+					<string>22.IBPluginDependency</string>
 					<string>3.CustomClassName</string>
 					<string>3.IBPluginDependency</string>
 				</object>
@@ -200,9 +218,10 @@
 					<string>UIApplication</string>
 					<string>UIResponder</string>
 					<string>EnableEmojiViewController</string>
-					<string>{{752, 192}, {320, 480}}</string>
+					<string>{{486, 224}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{525, 346}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -230,7 +249,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">20</int>
+			<int key="maxID">22</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
