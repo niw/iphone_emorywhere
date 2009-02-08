@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'EnableEmoji' target in the 'EnableEmoji' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
